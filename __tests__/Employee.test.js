@@ -1,8 +1,8 @@
 const Employee = require('../lib/Employee')
 
 //CREATE EMPLOYEE TO TEST
-test('create name id email to test', () => {
-    const employee = new Employee('Omega', '01', 'omega@vtrigger.com')
+test('create employee name id email to test', () => {
+    const employee = new Employee('Omega', 999, 'kennyomega@vtrigger.com')
 
     expect(employee.name).toEqual(expect.any(String));
     expect(employee.id).toEqual(expect.any(Number));
@@ -12,7 +12,7 @@ test('create name id email to test', () => {
 
 //TEST getName()
 test('get name of Employee', () => {
-    const employee = new Employee('Omega', '01', 'omega@vtrigger.com')
+    const employee = new Employee('Omega', 999, 'kennyomega@vtrigger.com')
 
     expect(employee.getName()).toEqual(expect.any(String));
   
@@ -20,7 +20,7 @@ test('get name of Employee', () => {
 
 //TEST getId()
 test('get id of Employee', () => {
-    const employee = new Employee('Omega', '01', 'omega@vtrigger.com')
+    const employee = new Employee('Omega', 999, 'kennyomega@vtrigger.com')
 
     expect(employee.getId()).toEqual(expect.any(Number));
 
@@ -28,7 +28,7 @@ test('get id of Employee', () => {
 
 //TEST getEmail()
 test('get email of Employee', () => {
-    const employee = new Employee('Omega', '01', 'omega@vtrigger.com')
+    const employee = new Employee('Omega', 999, 'kennyomega@vtrigger.com')
 
     expect(employee.getEmail()).toEqual(expect.any(String));
 
@@ -36,5 +36,8 @@ test('get email of Employee', () => {
 
 //TEST getRole() // Returns 'Employee'
 test('get role of Employee', () => {
+    const employee = new Employee('Omega', 999, 'kennyomega@vtrigger.com')
 
+    expect(employee.getRole()).toEqual("Employee")
+    
 })
