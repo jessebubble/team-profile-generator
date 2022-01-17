@@ -1,4 +1,6 @@
 const inquirer = require('inquirer');
+const fs = require('fs');
+const teamTemplate = require('./src/page-template');
 
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
@@ -108,6 +110,22 @@ const employeePrompt = () => {
     })
 }
 
+const writeFile = () => {
+    return new Promise((resolve, reject) => {
+        fs.writeFile('./dist/index.html', teamTemplate(team), err => {
+            if (err) {
+                reject(err);
+                return;
+            }
+            resolve({
+                ok: true,
+                message: 'HTML File created'
+            })
+        })
+    })
+}
+
 startPrompt()
 .then(employeePrompt)
+
 
