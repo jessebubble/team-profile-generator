@@ -6,7 +6,8 @@ const Intern = require('./lib/Intern');
 const Employee = require('./lib/Employee');
 
 const teamProfile = [];
-//WHEN I start the application THEN I am prompted to enter the team manager’s name, employee ID, email address, and office number
+//WHEN I start the application
+//THEN I am prompted to enter the team manager’s name, employee ID, email address, and office number
 const startPrompt = () => {
     return inquirer.prompt([
         {
@@ -72,7 +73,7 @@ const employeePrompt = () => {
         {
             type: "input",
             name: "school",
-            message: "Enter name of school for Inter"
+            message: "Enter name of school for Intern"
         },
         {
             type: "confirm",
