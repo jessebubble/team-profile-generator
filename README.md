@@ -1,8 +1,15 @@
-# team-profile-generator
-assignment 10 OOP TDD 
+# Team Profile Generator 🪄
+- `Object Oriented Programming`
+- `JestJS` for unit testing
+- `InquirerJS` for collecting user input
 
-## DESCRIPTION
-Build a Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person. Because testing is key to making code maintainable, you’ll also write unit tests for each part of your code and ensure that it passes all of them.
+## DESCRIPTION 📓
+- This is a `NodeJS` Command-Line Application that takes in information about employees on a software engineering team
+- Generates an HTML webpage that displays summaries for each person. 
 
-## VIDEO LINK
-[LIVE DEMO]https://watch.screencastify.com/v/y2OiWuoKHYUr6YnqfO3y
+## Video Link w/ Live DEMO 🎥
+* [Check it Out](https://watch.screencastify.com/v/y2OiWuoKHYUr6YnqfO3y)
+
+## Resources 💡
+* [JestJS - Testing Framework for Javascript](https://jestjs.io/)
+* [InquirerJS - Command Line interface for NodeJS](https://github.com/SBoudrias/Inquirer.js)
